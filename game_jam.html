@@ -1,0 +1,207 @@
+<html>
+
+<head>
+    <title>Recycle Go!!</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* background-color: black;*/
+            background-image: url('https://www.rts.com/wp-content/uploads/2020/10/facts-recycling-1536x869.jpg');
+            background-repeat: no-repeat;
+            background-position: center 0px;
+            background-size: 100%;
+
+        }
+
+        .container {
+            display: grid;
+            color: black;
+            height: 100%;
+        }
+
+        h1 {
+            font-size: 50px;
+            position: relative;
+            top: 20px;
+            text-align: center;
+        }
+
+        .name {
+            text-align: center;
+        }
+
+        .desc {
+            position: relative;
+            text-align: center;
+            top: 7;
+            bottom: 120px;
+            font-size: large;
+            font-family: 'Ubuntu', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .image {
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            top: 6;
+        }
+
+        .im_2 {
+            position: relative;
+            left: -15px;
+        }
+
+        .im_3 {
+            position: relative;
+            left: -22px;
+        }
+
+        .im_4 {
+            position: relative;
+            left: -15px;
+        }
+
+        .im_5 {
+            position: relative;
+            left: 10px;
+        }
+
+        .im_6 {
+            position: relative;
+            left: 11px;
+        }
+
+        .im_8 {
+            position: relative;
+            left: -5px;
+        }
+
+        .im_10 {
+            position: relative;
+            left: -8px;
+        }
+
+        .g_sp1 {
+            position: relative;
+            bottom: 250px;
+        }
+
+        .btn {
+            background-color: rgb(92, 208, 88);
+            border: 2px solid violet;
+            border-radius: 5px;
+        }
+    </style>
+
+    <script>
+        var score = 0;
+        function recycle(item) {
+            if (item === "paper" || item === "glass" || item === "plastic" || item === "iron rod" || item === "rubber" || item === "battery" || item === "cloth") {
+                score += 10;
+                alert("Good job! You just recycled " + item + ". Your score is now " + score);
+                if (score >= 70) {
+                    alert("You Learned to Recycle!");
+                    reloadpage();
+                }
+            }
+            else {
+
+                alert("Oops! " + item + " cannot be recycled");
+
+                alert("Try Recycling Again!");
+                reloadpage();
+
+            }
+        }
+        function reloadpage() {
+            location.reload();
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="name">Recycle Go!!</h1>
+        <p class="desc">Welcome to Recycle Go!! <br>Your goal is to recycle as much as you can and reduce waste.<br>
+            Simply
+            click on the items you want to recycle to find out if they can be recycled or not.</p>
+        <div class="g_sp">
+            <div class="box">
+                <button class="btn" onclick="recycle('paper')">Recycle Paper</button>
+                <button class="btn" onclick="recycle('glass')">Recycle Glass</button>
+                <button class="btn" onclick="recycle('plastic')">Recycle Plastic</button>
+                <button class="btn" onclick="recycle('banana peel')">Recycle Banana Peel</button>
+            </div>
+
+            <div class="image">
+                <img class="im_1"
+                    src="https://www.collinsdictionary.com/images/full/paper_111691001_1000.jpg?version=4.0.294"
+                    onclick="recycle('paper')" width="100px" alt="paper_pic">
+                <img class="im_2" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Michaeljacksonbierglazen.jpg"
+                    onclick="recycle('glass')" width="100px" alt="glass_pic">
+                <img class="im_3"
+                    src="https://d2cbg94ubxgsnp.cloudfront.net/Pictures/2000x1125/3/1/7/522317_gettyimages1325351577_726342.jpg"
+                    onclick="recycle('plastic')" width="100px" alt="plastic_pic">
+                <img class="im_4"
+                    src="https://www.gardeningknowhow.com/wp-content/uploads/2020/11/yellow-banana-peels-400x300.jpg"
+                    onclick="recycle('banana peel')" width="100px" alt="bananapeel_pic">
+            </div>
+        </div>
+        <div class="g_sp">
+            <div class="box">
+                <button class="btn" onclick="recycle('iron rod')">Recycle iron rod</button>
+                <button class="btn" onclick="recycle('wood')">Recycle wood</button>
+                <button class="btn" onclick="recycle('wax')">Recycle wax</button>
+                <button class="btn" onclick="recycle('rubber')">Recycle rubber</button>
+            </div>
+
+            <div class="image">
+                <img class="im_5" src="https://tiimg.tistatic.com/fp/1/005/735/rust-proof-iron-rod-527-w410.jpg"
+                    onclick="recycle('iron rod')" width="100px" alt="ironrod_pic">
+                <img class="im_6"
+                    src="https://images.ctfassets.net/cnu0m8re1exe/60KbU1w7lmUCJeXZpdcW1x/ea455b58988d75412f56d4068ba208fc/shutterstock_347288675.jpg?fm=jpg&fl=progressive&w=660&h=433&fit=fill"
+                    onclick="recycle('wood')" width="100px" alt="wood_pic">
+                <img class="im_7"
+                    src="https://cdn.shopify.com/s/files/1/0911/8940/articles/dsc1517-1657310226115_dafaad98-7802-426a-9023-82f1dabd8a10_1750x.jpg?v=1664982609"
+                    onclick="recycle('wax')" width="100px" alt="wax_pic">
+                <img class="im_8"
+                    src="https://images.moneycontrol.com/static-mcnews/2018/12/A16-770x433.jpg?impolicy=website&width=770&height=431"
+                    onclick="recycle('rubber')" width="100px" alt="rubber_pic">
+            </div>
+        </div>
+        <div class="g_sp">
+            <div class="box">
+                <button class="btn" onclick="recycle('battery')">Recycle battery</button>
+                <button class="btn" onclick="recycle('ceramic')">Recycle ceramic</button>
+                <button class="btn" onclick="recycle('cloth')">Recycle cloth</button>
+                <button class="btn" onclick="recycle('carbon paper')">Recycle carbon paper</button>
+            </div>
+
+            <div class="image">
+                <img class="im_1" src="https://mccord.cm.utexas.edu/chembook/pics/alkaline-batteries2.jpg" width="100px"
+                    onclick="recycle('battery')" alt="battery_pic">
+                <img class="im_10"
+                    src="https://hips.hearstapps.com/hmg-prod/images/blue-and-white-ceramics-collection-1592508850.jpg?crop=1.00xw:0.394xh;0,0.499xh&resize=1200:*"
+                    onclick="recycle('ceramic')" width="100px" alt="ceramic_pic">
+                <img class="im_3"
+                    src="https://st.depositphotos.com/1177973/3669/i/950/depositphotos_36697799-stock-photo-cloth-fabrics-close-up.jpg"
+                    onclick="recycle('cloth')" width="100px" alt="cloth_pic">
+                <img class="im_4" src="https://topperskit.com/wp-content/uploads/2021/11/12-4.jpg"
+                    onclick="recycle('carbon paper')" width="100px" alt="carbonpaper_pic">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
